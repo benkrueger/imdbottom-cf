@@ -8,6 +8,6 @@ workers_dev = true
 
 [site]
   bucket = "./public"
-  entry-point = "src"
+  main = "src/index.js"
 route = "imdbottom.xyz/*"
 zone_id = "cb442103c9ceb634095a1093f895afb2"
