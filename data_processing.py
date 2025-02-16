@@ -19,4 +19,4 @@ worst_movies = merged.sort_values('averageRating').head(100)
 worst_movies = worst_movies[['primaryTitle', 'startYear', 'averageRating', 'numVotes']]
 
 # Save to JSON
-worst_movies.to_json('public/movies.json', orient='records', lines=True)
+worst_movies.to_json('public/movies.json', orient='records')
