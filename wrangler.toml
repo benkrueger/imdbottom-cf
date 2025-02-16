@@ -2,10 +2,10 @@
 name = "imdbottom-worker"
 type = "javascript"
 
-account_id = "your_account_id"
+account_id = "d177c20ee4bdec62d8a1e1445154108b"
 workers_dev = true
-route = ""
-zone_id = ""
+route = "imdbottom.xyz/*"
+zone_id = "cb442103c9ceb634095a1093f895afb2"
 
 [site]
 bucket = "./public"
