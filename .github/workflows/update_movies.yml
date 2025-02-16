@@ -21,13 +21,14 @@ jobs:
 
       - name: Download IMDb datasets
         run: |
-          curl -O https://datasets.imdbws.com/title.basics.tsv.gz
-          curl -O https://datasets.imdbws.com/title.ratings.tsv.gz
+          mkdir -p data
+          curl -o data/title.basics.tsv.gz https://datasets.imdbws.com/title.basics.tsv.gz
+          curl -o data/title.ratings.tsv.gz https://datasets.imdbws.com/title.ratings.tsv.gz
 
       - name: Extract datasets
         run: |
-          gunzip title.basics.tsv.gz
-          gunzip title.ratings.tsv.gz
+          gunzip -c data/title.basics.tsv.gz > data/title.basics.tsv
+          gunzip -c data/title.ratings.tsv.gz > data/title.ratings.tsv
 
       - name: Run data processing script
         run: python data_processing.py
