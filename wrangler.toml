@@ -1,11 +1,3 @@
 # wrangler.toml
-name = "imdbottom-worker"
-type = "javascript"
-
-account_id = "d177c20ee4bdec62d8a1e1445154108b"
+name = "imdbottom-pages"
 pages_build_output_dir = "public"  # Required for Cloudflare Pages
-workers_dev = true
-#main = "src/index.js"
-  
-route = "imdbottom.xyz/*"
-zone_id = "cb442103c9ceb634095a1093f895afb2"
